@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html data-theme="garden" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Gestione Appuntamenti</title>
+</head>
+<body>
+        <center>
+            <div class="banner">
+                <div class="content">
+                    <center>
+                        <h1 class="text-5xl font-bold">Gestione Note 1.0</h1>
+                        <br>
+                        <div class="inputBox">
+                            <h2 class="text-4xl font-bold">Cosa vuoi fare?</h2>
+                            <br>
+                            <input type="text" placeholder="Scrivi qui" class="input input-bordered input-secondary w-full max-w-xs" id="edtNota" required="required">
+                        </div>
+                        <div>
+                            <br>
+                            <div class="btn btn-info">
+                                <button id="btnAdd">Aggiungi</button>
+                            </div>
+                            <div class="btn btn-warning">
+                                <button id="btnClear">Cancella Lista</button>
+                            </div>
+                            <input type="date" id="addDate"/>
+                        </div>
+                        <br>
+                    <ul id="listaTask">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="overflow-x-auto">
+                        <table class="table w-full">
+                          <!-- head -->
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Nome</th>
+                              <th>Lavoro</th>
+                              <th>Colore preferito</th>
+                            </tr>
+                          </thead>
+                          <tbody id="table">
+                            <!-- row 1 -->
+                            <tr>
+                              <th>1</th>
+                              <td>Cy Ganderton</td>
+                              <td>Quality Control Specialist</td>
+                              <td>Blue</td>
+                            </tr>
+                    </center>
+                </div>
+            </div>
+        </center>
+        <style type="text/css">
+            .banner{
+                margin: 0;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            #addDate{
+                padding: 10px;
+                margin-top: 20px;
+                font-size: 16px;
+                text-align: center;
+                color: #fff;
+                background-color: #009688;
+                border-radius: 8px;
+            }
+        </style>
+<script src="main.js"></script>
+</body>
+</html>
